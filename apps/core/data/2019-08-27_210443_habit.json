@@ -1,0 +1,46 @@
+[
+{
+  "model": "core.habit",
+  "pk": 1,
+  "fields": {
+    "owner": 1,
+    "title": "Cook at home",
+    "display_type": "BooleanField",
+    "weekly_goal": 5,
+    "daily_goal": 1
+  }
+},
+{
+  "model": "core.habit",
+  "pk": 2,
+  "fields": {
+    "owner": 1,
+    "title": "Medication",
+    "display_type": "BooleanField",
+    "weekly_goal": 7,
+    "daily_goal": 1
+  }
+},
+{
+  "model": "core.habit",
+  "pk": 3,
+  "fields": {
+    "owner": 1,
+    "title": "Exercise",
+    "display_type": "BooleanField",
+    "weekly_goal": 5,
+    "daily_goal": 1
+  }
+},
+{
+  "model": "core.habit",
+  "pk": 4,
+  "fields": {
+    "owner": 1,
+    "title": "Sleep / 8 hrs",
+    "display_type": "IntegerField",
+    "weekly_goal": 7,
+    "daily_goal": 8
+  }
+}
+]

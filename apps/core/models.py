@@ -11,6 +11,7 @@ class Habit(models.Model):
     title = models.CharField(max_length=100, blank=False, default='')
     display_type = models.CharField(choices=FIELD_CHOICES, max_length=100, default="BooleanField")
     weekly_goal = models.IntegerField(choices=DAY_CHOICES, default=7)
+    daily_goal = models.IntegerField(default=0)
 
     def __str__(self):
         return self.title
