@@ -18,13 +18,15 @@ def api_root(request, format=None):
 
 
 # List / Create views
-class LogList(generics.ListCreateAPIView):
+# class LogList(generics.ListCreateAPIView):
+class LogList(generics.ListAPIView):
     queryset = Log.objects.all()
     serializer_class = LogSerializer
     # permission_classes = [permissions.IsAuthenticated]
 
 
-class HabitList(generics.ListCreateAPIView):
+# class HabitList(generics.ListCreateAPIView):
+class HabitList(generics.ListAPIView):
     queryset = Habit.objects.all()
     serializer_class = HabitSerializer
     # permission_classes = [permissions.IsAuthenticated]
@@ -34,13 +36,15 @@ class HabitList(generics.ListCreateAPIView):
 
 
 # Retrieve, update or delete a log or habit instance
-class LogDetail(generics.RetrieveUpdateDestroyAPIView):
+# class LogDetail(generics.RetrieveUpdateDestroyAPIView):
+class LogDetail(generics.RetrieveAPIView):
     queryset = Log.objects.all()
     serializer_class = LogSerializer
     # permission_classes = [permissions.IsAuthenticated] ## TODO: fix permissions here?
 
 
-class HabitDetail(generics.RetrieveUpdateDestroyAPIView):
+# class HabitDetail(generics.RetrieveUpdateDestroyAPIView):
+class HabitDetail(generics.RetrieveAPIView):
     queryset = Habit.objects.all()
     serializer_class = HabitSerializer
     # permission_classes = [permissions.IsAuthenticated]
