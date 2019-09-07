@@ -7,3 +7,7 @@ DEBUG = False
 import django_heroku
 django_heroku.settings(locals())
 
+CORS_ORIGIN_WHITELIST = [
+    "https://young-beyond-25001.herokuapp.com/"
+]
+

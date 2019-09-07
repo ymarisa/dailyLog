@@ -10,6 +10,7 @@ django-heroku = "*"
 gunicorn = "*"
 psycopg2-binary = "*"
 djangorestframework = "*"
+django-cors-headers = "*"
 
 [dev-packages]
 django-debug-toolbar = "*"
